@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div>
+    <h1>Welcome</h1>
+    <p>Test!</p>
+
+    @if (!string.IsNullOrWhiteSpace(ViewBag.ImageUrl))
+    {
+        <img src="@ViewBag.ImageUrl" />
+    }
+</div>
